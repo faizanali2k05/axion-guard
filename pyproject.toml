@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.7,<2"]
+build-backend = "maturin"
+
+[project]
+name = "axiongrad"
+version = "0.1.0"
+description = "A from-scratch Rust deep-learning framework"
+requires-python = ">=3.12"
+readme = "README.md"
+license = { text = "MIT OR Apache-2.0" }
+
+[tool.maturin]
+manifest-path = "crates/axiongrad-python/Cargo.toml"
+python-source = "python"
+module-name = "axiongrad._axiongrad"
+features = ["pyo3/extension-module"]
+
+[tool.pytest.ini_options]
+testpaths = ["python/tests"]
+

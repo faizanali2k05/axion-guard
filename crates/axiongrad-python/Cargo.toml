@@ -1,0 +1,19 @@
+[package]
+name = "axiongrad-python"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+name = "_axiongrad"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+axiongrad-core.workspace = true
+axiongrad-autograd.workspace = true
+pyo3.workspace = true
+
+[lints]
+workspace = true
+

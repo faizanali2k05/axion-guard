@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title description">
+  <title id="title">AxionGrad</title>
+  <desc id="description">Geometric gradient paths converging through interconnected computation nodes.</desc>
+  <defs>
+    <linearGradient id="path-a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2457FF"/>
+      <stop offset="0.52" stop-color="#00C8F8"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="path-b" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#2457FF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(18 14)">
+    <path d="M18 126 L68 28 L119 126 Z" fill="none" stroke="url(#path-a)" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M42 94 H95" fill="none" stroke="#00C8F8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M68 28 C111 36 126 62 119 126" fill="none" stroke="url(#path-b)" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+    <path d="M18 126 C58 143 101 143 142 112" fill="none" stroke="#7C3AED" stroke-width="5" stroke-linecap="round"/>
+    <g fill="#07152F" stroke-width="5" filter="url(#glow)">
+      <circle cx="18" cy="126" r="9" stroke="#2457FF"/>
+      <circle cx="68" cy="28" r="9" stroke="#00C8F8"/>
+      <circle cx="119" cy="126" r="9" stroke="#7C3AED"/>
+      <circle cx="42" cy="94" r="7" stroke="#00C8F8"/>
+      <circle cx="95" cy="94" r="7" stroke="#00C8F8"/>
+      <circle cx="142" cy="112" r="7" stroke="#8B5CF6"/>
+    </g>
+    <path d="M132 104 l13 8 -14 6" fill="none" stroke="#C4B5FD" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#07152F" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+    <text x="184" y="108" font-size="70" font-weight="760" letter-spacing="-3">Axion</text>
+    <text x="360" y="108" font-size="70" font-weight="500" letter-spacing="-3" fill="#2457FF">Grad</text>
+    <text x="188" y="139" font-size="16" font-weight="600" letter-spacing="4" fill="#64748B">COMPUTE · DIFFERENTIATE · LEARN</text>
+  </g>
+</svg>
+

@@ -1,0 +1,16 @@
+[package]
+name = "axiongrad-optim"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+axiongrad-autograd.workspace = true
+axiongrad-core.workspace = true
+axiongrad-nn.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true
+

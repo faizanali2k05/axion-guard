@@ -1,0 +1,32 @@
+[workspace]
+members = [
+    "crates/axiongrad-core",
+    "crates/axiongrad-autograd",
+    "crates/axiongrad-nn",
+    "crates/axiongrad-optim",
+    "crates/axiongrad-python",
+    "examples",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+rust-version = "1.85"
+
+[workspace.dependencies]
+axiongrad-core = { path = "crates/axiongrad-core" }
+axiongrad-autograd = { path = "crates/axiongrad-autograd" }
+axiongrad-nn = { path = "crates/axiongrad-nn" }
+axiongrad-optim = { path = "crates/axiongrad-optim" }
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+pyo3 = { version = "0.27", features = ["extension-module"] }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"
+

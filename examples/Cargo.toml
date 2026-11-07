@@ -1,0 +1,17 @@
+[package]
+name = "axiongrad-examples"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+axiongrad-core.workspace = true
+axiongrad-autograd.workspace = true
+axiongrad-nn.workspace = true
+axiongrad-optim.workspace = true
+
+[lints]
+workspace = true
+

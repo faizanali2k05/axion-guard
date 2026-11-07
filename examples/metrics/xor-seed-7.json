@@ -1,0 +1,13 @@
+{
+  "example": "xor",
+  "seed": 7,
+  "epochs": 1500,
+  "optimizer": "Adam",
+  "learning_rate": 0.05,
+  "initial_loss": 0.253895432,
+  "final_loss": 0.000003317,
+  "accuracy": 1.00,
+  "predictions": [0.0011780788, 0.99768806, 0.9985316, 0.0020923852],
+  "classes": [0, 1, 1, 0]
+}
+
